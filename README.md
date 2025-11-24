@@ -1,4 +1,4 @@
-# EXPERIMENT-2-OPTICAL-COMMUNICATION
+## EXPERIMENT-2-OPTICAL-COMMUNICATION
 ## 🔍 EX.NO: 2 – Verification of Fiber Losses
 
 **Aim:**  
@@ -21,77 +21,119 @@ Whenever the condition for angel of incidence of the incident lights is violated
 
 **Procedure:**  
 	Connect the power supply with proper polarity to the kit link-B and switch it on.
+
 	Keep all Switch Faults in OFF position.
+
 	Keep switch SW8 towards TX position.
+
 	Keep switch SW9 towards TX1 position.
+
 	Keep Jumper JP5 towards +12V position.
+
 	Keep Jumpers JP6, JP9, JP10 shorted.
+
 	Keep Jumper JP8 towards sine position.
+
 	Keep Intensity control pot P2 towards minimum position.
+
 	Feed about 2Vpp sinusoidal signal of 1 KHz from the function generator to the IN post of Analog Buffer.
 
 <img width="743" height="301" alt="image" src="https://github.com/user-attachments/assets/e72fbc49-0624-4b15-a4d4-65f39f04196d" />
 
 
 	Connect the output post OUT of Analog Buffer to the post TX IN of Transmitter.
+
 	Slightly unscrew the cap of SFH756V (660nm). Do not remove the cap from the connector. Once the cap is loosened, insert the one meter fiber into the cap. Now tighten the cap by screwing it back.
+
 	Connect the other end of the Fiber to detector SFH350V (Photo Transistor Detector) very carefully.
+
 	Observe the detected signal at post ANALOG OUT on oscilloscope. Adjust Intensity control pot P2 Optical Power control potentiometer so that you receive signal of 2Vpp amplitude.
 
 <img width="716" height="294" alt="image" src="https://github.com/user-attachments/assets/72fea700-a99c-41ed-9dfa-e3bb04be70d8" />
 
 
 	Measure the peak value of the received signal at ANALOG OUT terminal. Let this value be V1.
+
 	Now replace 1 meter Fiber by 3 Meter Fiber. Do not disturb any settings. Again take the peak voltage reading and let it be V2.
  
  <img width="696" height="286" alt="image" src="https://github.com/user-attachments/assets/01ee210d-f880-4ee7-b18f-95b9a5679aed" />
-
-
 
 	If a is the attenuation of the Fiber then we have. P1/P2 = V1/V2 = e [ -a (L1+L2 ) ]
 
 Where
 a = nepers/ Meter
 L1 = Fiber Length for V1 L2 = Fiber Length for V2 This a is for peak wavelength of 660nm
+
 	Keep switch SW9 towards TX2 position.
+
 	Keep Jumper JP7 towards +12V position.
+
 	Remove fiber cable from SFH756V (660nm) & SFH350V and insert one meter fiber between SFH450V (950nm) & SFH350V.
+
 	Observe the detected signal at post ANALOG OUT on oscilloscope.
 
 <img width="829" height="342" alt="image" src="https://github.com/user-attachments/assets/0ac9a0a2-7c28-4a01-9ffd-ff0f907fac57" />
 
 
 	Measure the peak value of the received signal at ANALOG OUT terminal. Let this value be V1.
+
 	Now replace 1 meter Fiber by 3 Meter Fiber. Do not disturb any settings. Again take the peak voltage reading and let it be V2.
+
 	If a is the attenuation of the Fiber then we have. P1/P2 = V1/V2 = e [ -a (L1+L2 ) ]
+
 Where
+
 a = nepers/ Meter
+
 L1 = Fiber Length for V1 ; L2 = Fiber Length for V2 This a is for peak wavelength of 950nm
+
 	Compare the two a values.
  
 MEASUREMENT OF BENDING LOSSES:
+
 	Remove fiber cable from SFH450V (950nm) & SFH350V and insert one meter fiber between SFH756V (660nm) & SFH350V.
+
 	Bend the Fiber in a loop. Measure the amplitude of the received signal.
+
 	Keep reducing the diameter of bend to about 2 cm & take corresponding out voltage readings. (Do not reduce loop diameter less than 1 cm).
+
 	Plot a graph of the received signal amplitude versus the loop diameter.
 
- 
+
+### **Block diagram :**
+
+  <img width="815" height="431" alt="image" src="https://github.com/user-attachments/assets/ef4632d0-e2dd-4b03-ae63-f571fafe3337" />
+
 
 **Tabulation:**
 
 ### Propagation Loss
 
-| Fiber Length | Input Amplitude (V) | Output Amplitude (V) |
-|--------------|---------------------|------------------------|
-|              |                     |                        |
+| Fiber Length     | Input Amplitude (V)        | Output Amplitude (V)     |
+|------------------|----------------------------|--------------------------|
+|    1             |       2                    |       6.3                |
+|    0.5           |       2                    |       9                  |
 
 ### Bending Loss
 
-| Bending Diameter | Input Amplitude (V) | Output Amplitude (V) |
-|------------------|---------------------|------------------------|
-|                  |                     |                        |
+| Bend Diameter | Input (V) | Output (V) |
+| ------------- | --------- | ---------- |
+| 5 cm          | 2 V       | 7.8 V      |
+| 3 cm          | 2 V       | 7.0 V      |
+
+**Calculation**
+
+![WhatsApp Image 2025-11-24 at 10 35 49 PM](https://github.com/user-attachments/assets/a73d7e74-8d2a-49b0-8f33-b690b9b19f68)
+
+
 
 **Result:**  
-Attenuation and bending loss characteristics verified.
+The experiment successfully verified the losses in a fiber-optic link:
+
+The propagation (transmission) loss was measured over different lengths of the fiber for two wavelengths (660 nm & 950 nm) and found to increase with length, confirming the expected attenuation behaviour.
+
+The bending loss was observed by varying the loop diameter of the fiber and measuring output amplitude — as the bend diameter decreased, the output dropped, verifying increased bending loss.
+
+Hence, the aim of measuring both propagation loss and bending loss characteristics of the fiber was achieved.
 
 ---
